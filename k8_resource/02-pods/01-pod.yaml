@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: roboshop1
-  namespace: hell_world
+  name: roboshop
+  namespace: hell-world
 spec:
   containers:
-   - name: roboshop1
+   - name: nginximage
      image: nginx
      ports:
       - containerPort: 80
