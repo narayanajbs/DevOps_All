@@ -6,12 +6,12 @@ metadata:
   labels:
     course: DevOps
     trainer: shivakumar
-  spec:
-    containers:
-    - name: nginximage
-      image: nginx
-      ports:
-      - containerPort: 80
-    - name: almalinux
-      image: almalinux:8
-      command: ["sleep", "300"]
+spec:
+  containers:
+  - name: nginximage
+    image: nginx
+    ports:
+    - containerPort: 80
+  - name: almalinux
+    image: almalinux:8
+    command: ["sleep", "300"]
