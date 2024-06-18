@@ -5,7 +5,7 @@ metadata:
   namespace: hell_world
 spec:
   containers:
-  -name: myFirstPod
-    image: nginx
-    ports:
-    -containerPort: 80
+   -name: myFirstPod
+      image: nginx
+      ports:
+        -containerPort: 80
