@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello_world
+  name: hello-world
   namespace: roboshop
 spec:
   containers:
