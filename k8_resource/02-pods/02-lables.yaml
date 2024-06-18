@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: labels-demo
   namespace: roboshop
-  lables:
+  labels:
     course: DevOps
     trainer: siva
 spec:
