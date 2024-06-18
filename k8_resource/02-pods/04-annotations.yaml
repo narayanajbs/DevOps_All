@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotations-demo
+  namespace: roboshop
+  labels: 
+    course: DevOps
+    trainer: shivakumar
+  annotations:
+    jenkinsURL: "https://github.com/narayanajbs/DevOps_All/tree/main/k8_resource"
+    author: satya
+spec:
+  containers:
+  - name: nginximage
+    image: nginx
+    ports:
+    - containerPort: 80
