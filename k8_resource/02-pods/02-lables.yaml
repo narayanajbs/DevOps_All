@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: lables-demo
+  name: labels-demo
   namespace: roboshop
   lables:
     course: DevOps
     trainer: siva
 spec:
   containers:
-  - name: lables-test
+  - name: labels-test
     image: nginx
-    containerports:
+    ports:
     - containerPort: 80
