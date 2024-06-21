@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap_demo
+  namespace: roboshop
+  labels:
+    course: DevOps
+    trainer: shivak umar
+  annotations:
+    jenkinsURL: "https://github.com/narayanajbs/DevOps_All/blob/main/k8_resource/02-pods/01-pod.yaml"
+    author: satya
+spec:
+  containers:
+  - name: nginx_config
+    image: nginx
+    ports:
+    - containerPort: 80
+    env:
+      - name: DevEnv
+        value: "DEV-SOI-normal"
+      - name: courseConfigmap
+        valueFrom:
+          configMapKeyRef:
+           name: devconfigmapRef
+           key: course
+      - name: trainerConfigmap
+        valueFrom:
+          configMapKeyRef:
+            name: devconfigmapRef
+            key: trainer
+    envFrom:
+    - configMapRef:  
+      name: devconfigmapRef
+    - secretRef:
+      name: 
