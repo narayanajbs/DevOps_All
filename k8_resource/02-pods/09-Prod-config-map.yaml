@@ -21,15 +21,15 @@ spec:
       - name: courseConfigmap
         valueFrom:
           configMapKeyRef:
-           name: devconfigmapRef
+           name: devconfigmapref
            key: course
       - name: trainerConfigmap
         valueFrom:
           configMapKeyRef:
-            name: devconfigmapRef
+            name: devconfigmapref
             key: trainer
     envFrom:
     - configMapRef:  
-      name: devconfigmapRef
+      name: devconfigmapref
     - secretRef:
       name: 
