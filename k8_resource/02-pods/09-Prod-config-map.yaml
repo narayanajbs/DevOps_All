@@ -15,17 +15,6 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
-    env:
-    - name: courseconfigmap
-      valueFrom:
-       configMapKeyRef:
-        name: devconfigmapref
-        key: course
-    - name: trainerconfigmap
-      valueFrom:
-       configMapKeyRef:
-        name: devconfigmapref
-        key: trainer
     envFrom:
     - configMapRef:  
        name: devconfigmapref
