@@ -18,5 +18,5 @@ spec:
     env:
     - name: dev
       value: "DEV-SOI"
-    - name: 
+    - name: SIT
       value: "SIT-SOI"
