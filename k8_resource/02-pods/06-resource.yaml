@@ -15,12 +15,12 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
-    resource:
+    resources:
       requests:
-        CPU: "100m"
+        cpu: "100m"
         memory: "64Mi"
       limits:
-        CPU: "150m"
+        cpu: "150m"
         memory: "128Mi"
     env:
     - name: DevEnv
