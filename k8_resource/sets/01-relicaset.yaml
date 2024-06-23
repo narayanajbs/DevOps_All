@@ -13,16 +13,16 @@ spec:
  replicas: 2
  selector:
   matchLabels:
-    app: replicaset-nginx
-    demo: replicatsetdemo
+   app: replicaset-nginx
+   demo: replicatsetdemo
   template:
-    metadata:
+   metadata:
      labels: 
       app: replicaset-nginx
       demo: replicatsetdemo
-    spec:
-      containers:
-      - name: nginxreplica
-        image: nginx:mainline-alpine3.18-perl 
-        ports:
-        - containerPort: 80
+   spec:
+    containers:
+    - name: nginxreplica
+      image: nginx:mainline-alpine3.18-perl 
+      ports:
+      - containerPort: 80
