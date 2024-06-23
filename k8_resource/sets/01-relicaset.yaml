@@ -15,14 +15,14 @@ spec:
   matchLabels:
    app: replicaset-nginx
    demo: replicatsetdemo
-  template:
-   metadata:
-     labels: 
-      app: replicaset-nginx
-      demo: replicatsetdemo
-   spec:
-    containers:
-    - name: nginxreplica
-      image: nginx:mainline-alpine3.18-perl 
-      ports:
-      - containerPort: 80
+ template:
+  metadata:
+   labels: 
+    app: replicaset-nginx
+    demo: replicatsetdemo
+  spec:
+   containers:
+   - name: nginxreplica
+     image: nginx:mainline-alpine3.18-perl 
+     ports:
+     - containerPort: 80
