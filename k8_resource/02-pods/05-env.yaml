@@ -15,8 +15,8 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
-    env:
-    - name: dev
-      value: "DEV-SOI"
-    - name: 
-      value: "SIT-SOI"
+  env:
+  - name: dev
+    value: "DEV-SOI"
+  - name: 
+    value: "SIT-SOI"
