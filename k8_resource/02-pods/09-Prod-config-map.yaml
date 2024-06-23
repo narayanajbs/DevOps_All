@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: configmap_demo
+  name: configmap-demo
   namespace: roboshop
   labels:
     course: DevOps
@@ -11,7 +11,7 @@ metadata:
     author: satya
 spec:
   containers:
-  - name: nginx_config
+  - name: nginxconfig
     image: nginx
     ports:
     - containerPort: 80
