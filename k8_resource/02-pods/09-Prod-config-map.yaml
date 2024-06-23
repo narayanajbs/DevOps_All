@@ -28,24 +28,6 @@ spec:
           configMapKeyRef:
             name: devconfigmapref
             key: trainer
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: envfromdemo
-  namespace: roboshop
-  labels:
-    course: DevOps
-    trainer: shivakumar
-  annotations:
-    jenkinsURL: "https://github.com/narayanajbs/DevOps_All/blob/main/k8_resource/02-pods/01-pod.yaml"
-    author: satya
-spec:
-  containers:
-  - name: nginxconfig
-    image: nginx
-    ports:
-    - containerPort: 80
     envFrom:
     - configMapRef:  
        name: devconfigmapref
