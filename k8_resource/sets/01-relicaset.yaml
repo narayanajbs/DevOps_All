@@ -25,3 +25,5 @@ metadata:
         containers:
         - name: nginxreplica
           image: nginx:mainline-alpine3.18-perl 
+          ports:
+          - containerPort: 80
