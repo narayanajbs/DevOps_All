@@ -31,5 +31,3 @@ spec:
     envFrom:
     - configMapRef:  
       name: devconfigmapref
-    - secretRef:
-      name: 
