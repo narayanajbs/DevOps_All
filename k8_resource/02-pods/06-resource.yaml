@@ -11,15 +11,15 @@ metadata:
     author: satya
 spec:
   containers:
-  - name: resourceimage 
+  - name: nginximage 
     image: nginx
     ports:
     - containerPort: 80
     resource:
-      request:
+      requests:
         CPU: "100m"
         memory: "64Mi"
-      limints:
+      limits:
         CPU: "150m"
         memory: "128Mi"
     env:
