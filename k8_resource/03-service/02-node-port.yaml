@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nodportDemo
+  name: nodportdemo
   namespace: roboshop
   labels:
-    app: nodportNginx
+    app: nodportnginx
     demo: service
   annotations:
     jenkinsURL: "https://github.com/narayanajbs/DevOps_All/blob/main/k8_resource/02-pods/01-pod.yaml"
