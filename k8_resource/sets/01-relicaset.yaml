@@ -17,6 +17,7 @@ metadata:
        demo: replicatsetdemo
     template:
       metadata:
+       namespace: roboshop
        lables: 
         app: replicaset-nginx
         demo: replicatsetdemo
