@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: devconfigmapRef
+  name: devconfigmapref
   namespace: roboshop
 data:
   course: DevOpswithAWS
