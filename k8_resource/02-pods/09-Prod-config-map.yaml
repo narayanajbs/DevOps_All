@@ -28,6 +28,3 @@ spec:
           configMapKeyRef:
             name: devconfigmapref
             key: trainer
-    envFrom:
-    - configMapRef:  
-      name: devconfigmapref
