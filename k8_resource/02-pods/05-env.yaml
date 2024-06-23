@@ -20,7 +20,7 @@ spec:
       value: "DEV-SOI"
     - name: 
       value: "SIT-SOI"
-  - name: prodNginximage
+  - name: prodnginximage
     image: almalinux:8
     env:
     - name: PODEnv
