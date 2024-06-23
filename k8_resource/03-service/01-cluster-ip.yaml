@@ -22,7 +22,6 @@ spec:
   kind: Service
   metadata:
     name: servicenginx
-    namesapce: roboshop
   spec:
     selector:
       app: nginx
