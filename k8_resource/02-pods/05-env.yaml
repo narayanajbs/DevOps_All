@@ -16,10 +16,10 @@ spec:
     ports:
     - containerPort: 80
     env:
-      - name: Dev
-        value: "DEV-SOI"
-      - name: SIT
-        value: "SIT-SOI"
+    - name: dev
+      value: "DEV-SOI"
+    - name: 
+      value: "SIT-SOI"
   - name: prodNginximage
     image: almalinux:8
     env:
