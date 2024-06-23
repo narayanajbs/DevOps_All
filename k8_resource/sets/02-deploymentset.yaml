@@ -1,22 +1,22 @@
 apiVersion: v1
 kind: deployment
 metadata:
-  name: deploymentDemo
+  name: deploymentdemo
   namespace: roadshop
   labels:
-   app: deploymentNginx
-   demo: deployementDemo
+   app: deploymentnginx
+   demo: deployementnemo
 spec:
   replicas: 2
   selector:
-    matchLables:
-     app: deploymentNginx
-     demo: deployementDemo  
+    matchLabels:
+     app: deploymentnginx
+     demo: deployementdemo  
   template:
    metadata:
     labels:
-     app: deploymentNginx
-     demo: deployementDemo
+     app: deploymentnginx
+     demo: deployementdemo
    spec: 
     containers:
     - name: nginxdpeloyment
@@ -27,12 +27,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service
+  name: nginxservice
 spec:
   selector:
-   app: deploymentNginx
-   demo: deployementDemo      
+   app: deploymentnginx
+   demo: deployementdemo      
   ports:
-  - portocol: tcp
+  - portocol: TCP
     port: 80
     targetPort: 80
