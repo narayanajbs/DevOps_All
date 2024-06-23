@@ -11,7 +11,7 @@ metadata:
     author: satya
 spec:
   containers:
-  - name: nodeport-demo
+  - name: nodeportdemo
     image: nginx
     ports:  
     - containerPort: 80
@@ -21,14 +21,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-nodeport
+  name: nginxnodeport
 spec:
   type: NodePort
   selector:
-   app: nodportNginx
+   app: nodportnginx
    demo: service
   ports:
-  - protocol: tcp
+  - protocol: TCP
     port : 80
     targetPort: 80
 
