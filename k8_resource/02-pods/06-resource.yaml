@@ -17,10 +17,10 @@ spec:
     - containerPort: 80
     resources:
       requests:
-        CPU: "100m"
+        cpu: "100m"
         memory: "64Mi"
       limits:
-        CPU: "150m"
+        cpu: "150m"
         memory: "128Mi"
     env:
     - name: DevEnv
