@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicatSet
 metadata:
-  name: replicasetDemo
+  name: replicasetdemo
   namespace: roboshop
   labels:
     app: replicaset-nginx
