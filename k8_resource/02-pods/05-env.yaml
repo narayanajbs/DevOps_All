@@ -20,3 +20,9 @@ spec:
       value: "DEV-SOI"
     - name: SIT
       value: "SIT-SOI"
+  - name: prodnginximage
+    image: almalinux:8
+    env:
+    - name: PODEnv
+      value: "POD-SOI"
+    command: ["sleep","100"]
