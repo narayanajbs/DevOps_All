@@ -21,11 +21,11 @@ spec:
     - name: envconfig
       valuefrom: 
       - configMapKeyRef:
-        name: devconfigmapref
-        key: trainer
+         name: devconfigmapref
+         key: trainer
     envFrom:
     - configMapRef:
-      name: devconfigmapref
+       name: devconfigmapref
 ---
 apiVersion: v1
 kind: Service
