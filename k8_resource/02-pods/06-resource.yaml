@@ -15,9 +15,6 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
-    env:
-    - name: DevEnv
-      value: "DEV-SOI"
     resource:
       request:
         CPU: "100m"
@@ -25,3 +22,6 @@ spec:
       limints:
         CPU: "150m"
         memory: "128Mi"
+    env:
+    - name: DevEnv
+      value: "DEV-SOI"
