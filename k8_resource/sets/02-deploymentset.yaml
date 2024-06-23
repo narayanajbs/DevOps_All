@@ -33,6 +33,6 @@ spec:
    app: deploymentnginx
    demo: deployementdemo      
   ports:
-  - portocol: TCP
+  - protocol: TCP
     port: 80
     targetPort: 80
