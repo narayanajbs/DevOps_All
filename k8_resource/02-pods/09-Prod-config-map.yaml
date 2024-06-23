@@ -5,7 +5,7 @@ metadata:
   namespace: roboshop
   labels:
     course: DevOps
-    trainer: shivak umar
+    trainer: shivakumar
   annotations:
     jenkinsURL: "https://github.com/narayanajbs/DevOps_All/blob/main/k8_resource/02-pods/01-pod.yaml"
     author: satya
