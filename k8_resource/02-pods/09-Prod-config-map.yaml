@@ -48,4 +48,4 @@ spec:
     - containerPort: 80
     envFrom:
     - configMapRef:  
-      name: devconfigmapref
+       name: devconfigmapref
