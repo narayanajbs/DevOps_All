@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deploymentdemo
-  namespace: roadshop
+  namespace: roboshop
   labels:
    app: deploymentnginx
    demo: deployementnemo
