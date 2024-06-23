@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: clusterIPdemo
+  name: clusteripdemo
   namesapce: roboshop
   labels:
     app: nginx
@@ -11,7 +11,7 @@ metadata:
     author: satya
 spec:
   containers:
-  - name: clusterIPNginx
+  - name: clusteripnginx
     image: nginx
     ports:
     - containerPort: 80
