@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3"{
         bucket = "s3minieks"
-        key="minikube"
+        key="eksctl"
         region = "us-east-1"
         dynamodb_table = "minikubeDydb"
     }

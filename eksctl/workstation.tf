@@ -3,12 +3,12 @@ module "ec2_instance" {
 
   name = "workstaion"
 
-  instance_type = "t2.micro"
+ instance_type = "t2.micro"
  ami = "ami-0b4f379183e5706b9"
  #ami = data.aws_ami.centos8a.id
  # key_name               = "user1"
  # monitoring             = true
-  vpc_security_group_ids = [aws_security_group.allow_minikube.id]
+  vpc_security_group_ids = [aws_security_group.allow_eksctl.id]
   subnet_id              = "subnet-0c89d14b89ba994c2"
   user_data = file("docker.sh")
    tags = {
@@ -17,11 +17,10 @@ module "ec2_instance" {
   }
 }
 
-resource "aws_security_group" "allow_minikube" {
-  name        = "allow_minikube"
-  description = "created for minikube"
- # vpc_id      = aws_vpc.main.id
-
+resource "aws_security_group" "allow_eksctl" {
+  name        = "allow_eksctl"
+  description = "created for eksctl"
+  #vpc_id      = "vpc-0956976ba12f6fc23"
   tags = {
     Name = "allow_tls"
   }
